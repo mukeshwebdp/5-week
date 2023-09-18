@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question.8</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            width: 600px;
+            height: 600px;
+            border: 1px solid red;
+            margin: auto;
+            position: relative;
+        }
+        .box{
+            margin-left: 165px;
+            margin-top: 30px;
+            width: 225px;
+            height: 325px;
+            border: 1px solid green;
+            border-radius: 10px;
+            position: absolute;
+            transition: 0.5s;
+        }
+        .item-1{
+            background-color: green;
+            border: 1px solid #000000;
+            top: 50px;
+        }
+        .item-2{
+            background-color: #5a05aa;
+            top: 100px;
+            left: 40px;
+            border: 1px solid #000000;
+        }
+        .item-3{
+            background-color: #cf1381;
+            border: 1px solid #000000;
+            top: 150px;
+            left: 80px;
+        }
+        .box>img{
+            margin-left: 12px ;
+            width: 200px;
+            border-radius: 10px;
+        }
+        h3{
+            font-size: 22px;
+            color: aliceblue;
+            text-align: center;
+        }
+        .item-1:hover{
+            z-index: 1;
+            transform: scale(1.1);
+        }
+        .item-2:hover{
+            z-index: 1;
+            transform: scale(1.1);
+        }
+        .item-3:hover{
+            z-index: 1;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <h3>Hover To Unveil The Pokemon</h3>
+        <div class="box item-1">
+            <h3> Card-1</h3>
+            <img src="item-1.png" alt="card-1">
+        </div>
+        <div class="box item-2 ">
+            <h3>Card-2  </h3>
+            <img src="item-2.png" alt="card-2">
+        </div>
+        <div class="box item-3 ">
+            <h3> Card-3</h3>
+            <img src="item-3.png" alt="card-3">
+        </div>
+    </div>
+</body>
+</html>
